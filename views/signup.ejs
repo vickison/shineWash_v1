@@ -1,0 +1,43 @@
+<!-- Include Header-->
+<%- include('include/_header') %>
+<!-- Include Header-->
+
+<!-- Main-->
+<main id="site-main">
+    <!-- form-->
+    <form action="/api/users" method="POST" id="sign-in">
+        <div class="user-sign-in">
+            <div class="form-group">
+                <label for="fullname" class="text-light">Nom complet:</label>
+                <input type="text" name="fullname" value="" placeholder="Nom complet">
+            </div>
+            <div class="form-group">
+                <label for="username" class="text-light">Nom d'utilisateur:</label>
+                <input type="text" name="username" value="" placeholder="Nom d'utilisateur">
+            </div>
+            <div class="form-group">
+                <label for="email" class="text-light">Adresse d'email:</label>
+                <input type="email" name="email" value="" placeholder="Adresse email">
+            </div>
+            <div class="form-group">
+                <label for="password" class="text-light">Mot de pass:</label>
+                <input type="password" name="password" value="" placeholder="Mot de passe">
+            </div>
+            <div class="form-group">
+                <label for="phone" class="text-light">Tel:</label>
+                <input type="text" name="phone" value="" placeholder="Numero de telephone">
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn text-dark update">Sign Up</button>
+            </div>
+            <div class="form-group">
+                <p class="text-light">Vous avez déjà de compte? <a href="/login" class="register-ref">Cliquez ici</a></p>
+            </div>
+        </div>
+    </form>
+</main>
+<!-- Main-->
+
+<!-- Include Footer-->
+<%- include('include/_footer') %>
+<!-- Include Footer-->

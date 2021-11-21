@@ -1,0 +1,66 @@
+<!-- Include Header-->
+<%- include('include/_header') %>
+<!-- /Include Header-->
+
+<div class="site-main">
+    <form action="" method="post" id="sign-in">
+        <div class="user_service">
+            <div class="form-group">
+                <label for="typecar" class="text-light">Type de voiture</label>
+                <select name="typecar" id="typecar">
+                    <option value="camion">Camion</option>
+                    <option value="voiture">Voiture</option>
+                    <option value="bus">Bus</option>
+                    <option value="motocyclette">Motocyclette</option>
+                    <option value="jeep">Jeep</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="marque" class="text-light">Marque de la voiture</label>
+                <input type="text" name="marque" value="" placeholder="Marque de voiture, ex.: BMW, Toyota,...">
+            </div>
+            <div class="form-group">
+                <label for="model" class="text-light">Modele de voiture</label>
+                <input type="text" name="model" value="" placeholder="Model de voiture, ex.: BMW x1,...">
+            </div>
+            <div class="form-group">
+                <label for="color" class="text-light">Couleur de la voiture</label>
+                <input type="text" name="color" value="" placeholder="Couleur de voiture, ex.: rouge, bleue,...">
+            </div>
+            <div class="form-group">
+                <label for="plan" class="text-light">Votre plan</label>
+                <select name="plan" id="plan">
+                    <option value="lavageExpress">Lavage Express</option>
+                    <option value="nettoyageBase">Nettoyage de base</option>
+                    <option value="nettoyageHautGamme">Nettoyage haut de gamme</option>
+                    <option value="lavageTotal">Lavage total</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <div class="date_pic">
+                    <label for="date_com" class="text-light">Selectionnez une date:</label>
+                    <input type="date" id="date_com" name="date_com">
+                </div>
+                <div class="heure_pic">
+                    <label for="time" class="text-light">Selectionnez l'heure:</label>
+                    <input type="time" id="time" name="time">
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="cash" class="text-light">Moyen de payer</label>
+                <select name="cash" id="cash">
+                    <option value="mastercard">Master Card</option>
+                    <option value="paypal">Paypal</option>
+                    <option value="enCash">En cash</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn text-dark update">Soumettre</button>
+            </div>
+        </div>
+    </form>
+</div>
+
+<!-- Include footer-->
+<%- include('include/_footer')%>
+<!-- Include footer-->
